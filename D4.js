@@ -42,27 +42,7 @@ console.log(result)
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
- se n è uguale a 400.
-*/
-
-  /*function boundary(num50) {
-const num = num50
-  }
-   if (boundary > 20); {
-    console.log(true)
-   }
-   if (boundary < 100); {
-    console.log(true)
-   }
-   if (boundary === 400) {
-    console.log(true)
-   }
-   else {
-    console.log(false)
-   }
-
-boundary(50)
-console.log(boundary)                      Non è corretto*/              
+ se n è uguale a 400. */
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -85,7 +65,15 @@ function check3and7(num8)
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-
+const reverseString = function(str) {
+  let newString = ""
+for (let i = str.length-1; i >= 0; i--) {
+  console.log(str[i])
+  newString = newString + str[i].toUpperCAse()
+}
+  return newString
+}
+console.log(reverseString(epicode))
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
